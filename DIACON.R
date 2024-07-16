@@ -24,7 +24,7 @@ AbsoluteConstructionsPtcpProp
 
 #Make plots
 
-barplot(AbsoluteConstructionsPtcpProp, ylim = range(0:100), xlab = 'Figure 1: Absolute Constructions in Late Latin', ylab = 'Relative frequency (%)', cex.sub = 1.3, cex.lab = 1.3, cex.axis = 1.3, col = c('black', 'grey'), beside = TRUE) 
+barplot(AbsoluteConstructionsPtcpProp, ylim = range(0:100), ylab = 'Relative frequency (%)', cex.sub = 1.3, cex.lab = 1.3, cex.axis = 1.3, col = c('black', 'grey'), beside = TRUE) 
 legend("topleft", fill = c("black", "grey"), cex = 1.3, legend = c("Perfect Participle", "Present Participle"))
 
 chisq.test(AbsoluteConstructionsPtcp)
@@ -89,10 +89,10 @@ DIACONdata1Proportion
 
 #Make barplot and plot
 
-barplot(DIACONdata1Proportion, ylim = range(0:100), cex.names = 1.2, xlab = 'Figure 2: Absolute Accusative and Gerund in Late Latin', ylab = 'Relative frequency (%)', cex.sub = 1.3, cex.lab = 1.3, cex.axis = 1.3, col = c('black', 'grey'), beside = TRUE) 
+barplot(DIACONdata1Proportion, ylim = range(0:100), cex.names = 1.2, ylab = 'Relative frequency (%)', cex.sub = 1.3, cex.lab = 1.3, cex.axis = 1.3, col = c('black', 'grey'), beside = TRUE) 
 legend("topright", cex= 1.3, fill = c("black", "grey"), legend = c("Absolute Accusative", "Gerund"))
 
-plot(DIACONdata1Proportion[1,], type = "o", pch = 2, ylim = range(0:100), axes = FALSE, ylab = "Relative frequency (%)", xlab = "Figure 3: Absolute Accusative and Gerund in Late Latin", cex.sub = 1.3, cex.lab = 1.3, cex.axis = 1.3)
+plot(DIACONdata1Proportion[1,], type = "o", pch = 2, ylim = range(0:100), axes = FALSE, ylab = "Relative frequency (%)", xlab = "", cex.sub = 1.3, cex.lab = 1.3, cex.axis = 1.3)
 
 axis(1, at = 1:5, labels = colnames(DIACONdata1))
 axis(2)
